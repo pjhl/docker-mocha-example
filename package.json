@@ -1,0 +1,22 @@
+{
+  "name": "docker-mocha-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "watch": "nodemon src/app.js",
+    "test": "standard"
+  },
+  "keywords": [],
+  "author": "pjhl <pjhl.coder@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^2.5.0",
+    "koa-router": "^7.4.0"
+  }
+}
