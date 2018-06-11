@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "watch": "nodemon src/app.js",
     "test": "standard"
