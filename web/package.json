@@ -3,9 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "watch": "nodemon src/app.js",
     "test": "standard"
   },

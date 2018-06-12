@@ -2,9 +2,14 @@
 
 ## Build and run
 
-Production:
+### Development:
 
 ```bash
-sudo docker build -t docker-mocha-example ./src
-sudo docker run -it --rm -p 8080:8080 docker-mocha-example
+sudo docker-compose up --build
+```
+
+### Production:
+
+```bash
+sudo docker-compose -f docker-compose.prod.yml up --build
 ```
