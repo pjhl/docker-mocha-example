@@ -1,5 +1,5 @@
 {
-  "name": "docker-mocha-example",
+  "name": "docker-mocha-example-web",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -17,8 +17,12 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
+    "bookshelf": "^0.13.3",
+    "dotenv": "^6.0.0",
+    "knex": "^0.13.0",
     "koa": "^2.5.1",
     "koa-bodyparser": "^2.5.0",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.3"
   }
 }

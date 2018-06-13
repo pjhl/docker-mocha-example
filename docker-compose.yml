@@ -9,3 +9,16 @@ services:
 
     ports:
       - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://user1:123456@postgres/db
+  db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: user1
+      POSTGRES_PASSWORD: 123456

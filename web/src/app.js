@@ -27,7 +27,7 @@ app
   .use(todosController.allowedMethods())
 
 if (!module.parent) {
-  app.listen(8080) // TODO: Use port from env
+  app.listen(8080)
 } else {
   module.exports = app
 }
