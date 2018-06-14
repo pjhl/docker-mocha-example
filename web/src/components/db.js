@@ -1,12 +1,7 @@
-const config = require('./config')
+const knexfile = require('./knexfile')
 
-const knex = require('knex')({
-  client: 'pg',
-  connection: config.databaseUrl
-})
+const knex = require('knex')(knexfile)
 const bookshelf = require('bookshelf')(knex)
-
-console.log('Connection:.....')
 
 module.exports = {
   knex: knex,

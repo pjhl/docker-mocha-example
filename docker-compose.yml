@@ -10,14 +10,16 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - db
+      - database
     environment:
-      DATABASE_URL: postgres://user1:123456@postgres/db
-  db:
+      DATABASE_URL: postgres://user1:123456@database/db
+  database:
     build:
-      context: ./db
+      context: ./database
       dockerfile: Dockerfile
     restart: always
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_DB: db
       POSTGRES_USER: user1
