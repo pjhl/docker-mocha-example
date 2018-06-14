@@ -5,7 +5,7 @@
 ### Development:
 
 ```bash
-sudo docker-compose up --build
+docker-compose up --build
 ```
 
 In this development workflow, [nodemon](https://www.npmjs.com/package/nodemon)
@@ -15,5 +15,5 @@ restarts server.
 ### Production:
 
 ```bash
-sudo docker-compose -f docker-compose.prod.yml up --build
+docker-compose -f docker-compose.prod.yml up --build
 ```
