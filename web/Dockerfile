@@ -11,4 +11,4 @@ RUN chmod +x /usr/local/bin/wait-for
 COPY package.json package-lock.json /app/
 RUN npm install
 
-CMD /usr/local/bin/wait-for -t 30 database:5432 -- npm run watch
+CMD ["/usr/local/bin/wait-for", "-t", "30", "database:5432", "--", "npm", "run", "watch"]
